@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    kubernetes {
+    any {
       yamlFile 'build-agent.yaml'
       defaultContainer 'maven'
       idleMinutes 1
